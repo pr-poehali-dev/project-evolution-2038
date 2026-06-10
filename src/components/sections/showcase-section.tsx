@@ -1,14 +1,14 @@
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
-const showcaseImages = [
-  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/8b0291a5-b8b8-4952-8584-afe235cec811.jpg",
-  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/0d76929d-f014-4fbe-be16-d516dd515f80.jpg",
-  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/87fc4b29-abba-4937-bd6c-ec33157f132a.jpg",
-  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/f60b2ba6-2d24-420d-9be1-1b7cc0bb21fa.jpg",
-  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/1fd744ad-da24-4b12-8276-a7ba24c30414.jpg",
-  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/78da6467-ebbb-4cd1-b910-7d512a396ffe.jpg",
-  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/6c349c98-307b-4f48-88d3-190aea5ea866.jpg",
+const showcaseItems = [
+  { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/8b0291a5-b8b8-4952-8584-afe235cec811.jpg", label: "Футболки" },
+  { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/0d76929d-f014-4fbe-be16-d516dd515f80.jpg", label: "Блокноты" },
+  { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/87fc4b29-abba-4937-bd6c-ec33157f132a.jpg", label: "Мерч-наборы" },
+  { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/f60b2ba6-2d24-420d-9be1-1b7cc0bb21fa.jpg", label: "Аниме" },
+  { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/1fd744ad-da24-4b12-8276-a7ba24c30414.jpg", label: "Кружки" },
+  { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/78da6467-ebbb-4cd1-b910-7d512a396ffe.jpg", label: "Мультфильм" },
+  { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/6c349c98-307b-4f48-88d3-190aea5ea866.jpg", label: "Сумки" },
 ]
 
 const yOffsets: [number, number][] = [
@@ -51,7 +51,7 @@ export function ShowcaseSection() {
         </motion.p>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-          {showcaseImages.map((src, i) => (
+          {showcaseItems.map((item, i) => (
             <motion.div
               key={i}
               className="relative h-[300px] md:h-[400px] rounded-xl overflow-hidden group"
@@ -67,12 +67,16 @@ export function ShowcaseSection() {
               data-clickable
             >
               <motion.img
-                src={src}
-                alt={`Макет принта ${i + 1}`}
+                src={item.src}
+                alt={item.label}
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="absolute bottom-4 left-4 text-white text-sm font-medium tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {item.label}
+              </span>
             </motion.div>
           ))}
         </div>
