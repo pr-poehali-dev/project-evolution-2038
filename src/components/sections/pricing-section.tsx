@@ -79,15 +79,18 @@ export function PricingSection() {
                 ))}
               </ul>
 
-              <button
-                className={`w-full mt-8 py-3 px-6 rounded-lg font-medium transition-colors ${
+              <a
+                href="https://t.me/Max"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-full mt-8 py-3 px-6 rounded-lg font-medium transition-colors flex items-center justify-center gap-2 ${
                   plan.popular
                     ? "bg-primary text-primary-foreground hover:bg-primary/90"
                     : "bg-secondary text-foreground hover:bg-accent/30"
                 }`}
               >
-                Заказать
-              </button>
+                Заказать в Telegram
+              </a>
             </motion.div>
           ))}
         </div>
