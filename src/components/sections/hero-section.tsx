@@ -1,6 +1,6 @@
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
-import Icon from "@/components/ui/icon"
+
 
 const images = [
   "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/8b0291a5-b8b8-4952-8584-afe235cec811.jpg",
@@ -92,7 +92,6 @@ export function HeroSection() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
         >
-          <Icon name="Send" size={16} />
           Написать в Telegram
         </motion.a>
       </motion.div>
