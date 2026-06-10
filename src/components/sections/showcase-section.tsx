@@ -8,7 +8,7 @@ const showcaseItems = [
   { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/f60b2ba6-2d24-420d-9be1-1b7cc0bb21fa.jpg", label: "Аниме" },
   { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/1fd744ad-da24-4b12-8276-a7ba24c30414.jpg", label: "Кружки" },
   { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/78da6467-ebbb-4cd1-b910-7d512a396ffe.jpg", label: "Мультфильм" },
-  { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/9f529115-fbc0-4c8e-8fca-5bcf60c721e1.jpg", label: "Лило и Стич" },
+  { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/9f529115-fbc0-4c8e-8fca-5bcf60c721e1.jpg", label: "Сумки" },
 ]
 
 const yOffsets: [number, number][] = [
