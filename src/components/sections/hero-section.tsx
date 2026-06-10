@@ -72,7 +72,7 @@ export function HeroSection() {
       </div>
 
       <motion.div
-        className="absolute inset-0 flex items-center justify-center pointer-events-none z-10"
+        className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-10 gap-8"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
@@ -80,6 +80,19 @@ export function HeroSection() {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
           Принты, которые <em className="italic">говорят.</em>
         </h1>
+        <motion.a
+          href="https://t.me/Max"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="pointer-events-auto bg-foreground text-background px-8 py-4 rounded-full text-sm font-medium hover:bg-foreground/90 transition-colors"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.97 }}
+        >
+          Написать в Telegram
+        </motion.a>
       </motion.div>
 
       <motion.div
