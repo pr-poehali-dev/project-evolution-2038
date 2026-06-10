@@ -5,24 +5,24 @@ import { ArrowRight } from "lucide-react"
 
 const articles = [
   {
-    title: "Искусство визуального сторителлинга",
-    category: "Дизайн",
-    image: "/visual-storytelling-design-article.jpg",
+    title: "Как выбрать принт для корпоративного мерча",
+    category: "Советы",
+    image: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/87fc4b29-abba-4937-bd6c-ec33157f132a.jpg",
   },
   {
-    title: "Как создать личный бренд онлайн",
+    title: "Тренды принтов на одежду в 2025 году",
+    category: "Тренды",
+    image: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/161f2421-6747-41b2-a594-625e0df70fe0.jpg",
+  },
+  {
+    title: "От идеи до макета: как работает процесс",
+    category: "Процесс",
+    image: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/8b0291a5-b8b8-4952-8584-afe235cec811.jpg",
+  },
+  {
+    title: "Мерч как инструмент личного бренда",
     category: "Стратегия",
-    image: "/personal-branding-digital-marketing.jpg",
-  },
-  {
-    title: "Тренды типографики 2025",
-    category: "Типографика",
-    image: "/typography-trends-modern-fonts.jpg",
-  },
-  {
-    title: "Минимализм в дизайне портфолио",
-    category: "Вдохновение",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/c9b93558-4b38-4798-8115-5ec3ab0c9392.jpg",
   },
 ]
 
@@ -43,7 +43,7 @@ export function InsightsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Статьи
+          Блог
         </motion.p>
 
         <div className="divide-y divide-border">
@@ -72,7 +72,6 @@ export function InsightsSection() {
           ))}
         </div>
 
-        {/* Floating hover image */}
         <AnimatePresence>
           {hoveredIndex !== null && (
             <motion.div

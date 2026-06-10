@@ -3,18 +3,29 @@ import { Check } from "lucide-react"
 
 const plans = [
   {
-    name: "Старт",
-    price: "1 200",
-    period: " руб/мес",
-    description: "Для личного портфолио",
-    features: ["5 страниц", "Свой домен", "Базовая аналитика", "Поддержка по email"],
+    name: "Базовый",
+    price: "1 500",
+    period: " руб/макет",
+    description: "Один принт на один товар",
+    features: [
+      "1 вариант дизайна",
+      "Фотореалистичный макет",
+      "Форматы PNG + PDF",
+      "Правки в течение 3 дней",
+    ],
   },
   {
-    name: "Про",
-    price: "2 900",
-    period: " руб/мес",
-    description: "Для растущих авторов",
-    features: ["Безлимит страниц", "Приоритет поддержки", "Расширенная аналитика", "Свой брендинг", "Работа в команде"],
+    name: "Пакет",
+    price: "4 900",
+    period: " руб/пакет",
+    description: "Для полноценной линейки мерча",
+    features: [
+      "До 5 товаров",
+      "3 варианта дизайна",
+      "Все форматы файлов",
+      "Приоритетные правки",
+      "Консультация по печати",
+    ],
     popular: true,
   },
 ]
@@ -29,8 +40,8 @@ export function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Простые и понятные цены</h2>
-          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Начните бесплатно, платите когда готовы.</p>
+          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Понятные цены</h2>
+          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Выберите формат — и запустим ваш мерч.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -75,7 +86,7 @@ export function PricingSection() {
                     : "bg-secondary text-foreground hover:bg-accent/30"
                 }`}
               >
-                Начать
+                Заказать
               </button>
             </motion.div>
           ))}

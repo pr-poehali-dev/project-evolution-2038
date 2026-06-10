@@ -1,16 +1,15 @@
 import { motion } from "framer-motion"
 
 const portfolioItems = [
-  "/portfolio-website-design-preview-modern.jpg",
-  "/photography-portfolio-website-clean.jpg",
-  "/architecture-firm-website-minimal.jpg",
-  "/design-agency-portfolio-dark-theme.jpg",
-  "/artist-portfolio-website-creative.jpg",
-  "/writer-portfolio-website-elegant.jpg",
+  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/8b0291a5-b8b8-4952-8584-afe235cec811.jpg",
+  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/68275550-d226-4713-ae43-23e30eae765c.jpg",
+  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/0d76929d-f014-4fbe-be16-d516dd515f80.jpg",
+  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/87fc4b29-abba-4937-bd6c-ec33157f132a.jpg",
+  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/c9b93558-4b38-4798-8115-5ec3ab0c9392.jpg",
+  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/161f2421-6747-41b2-a594-625e0df70fe0.jpg",
 ]
 
 export function CarouselSection() {
-  // Duplicate for seamless loop
   const items = [...portfolioItems, ...portfolioItems]
 
   return (
@@ -22,7 +21,7 @@ export function CarouselSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Создано авторами для авторов.
+          Каждый принт — отдельная история.
         </motion.h2>
       </div>
 
@@ -44,7 +43,7 @@ export function CarouselSection() {
             >
               <img
                 src={src || "/placeholder.svg"}
-                alt={`Пример портфолио ${(i % portfolioItems.length) + 1}`}
+                alt={`Принт ${(i % portfolioItems.length) + 1}`}
                 className="w-full h-auto"
               />
             </div>

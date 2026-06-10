@@ -2,9 +2,9 @@ import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
 const images = [
-  "/minimal-architecture-portfolio-with-clean-lines.jpg",
-  "/fashion-photography-editorial-black-and-white.jpg",
-  "/modern-ui-design-portfolio-mockup.jpg",
+  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/8b0291a5-b8b8-4952-8584-afe235cec811.jpg",
+  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/c9b93558-4b38-4798-8115-5ec3ab0c9392.jpg",
+  "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/68275550-d226-4713-ae43-23e30eae765c.jpg",
 ]
 
 export function HeroSection() {
@@ -37,7 +37,7 @@ export function HeroSection() {
         >
           <img
             src={images[0] || "/placeholder.svg"}
-            alt="Портфолио 1"
+            alt="Принты на одежду"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -51,7 +51,7 @@ export function HeroSection() {
         >
           <img
             src={images[1] || "/placeholder.svg"}
-            alt="Портфолио 2"
+            alt="Принты на сумки"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -65,7 +65,7 @@ export function HeroSection() {
         >
           <img
             src={images[2] || "/placeholder.svg"}
-            alt="Портфолио 3"
+            alt="Принты на кружки"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -78,7 +78,7 @@ export function HeroSection() {
         transition={{ duration: 1, delay: 0.8 }}
       >
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
-          Ваши работы, <em className="italic">в фокусе</em>.
+          Принты, которые <em className="italic">говорят.</em>
         </h1>
       </motion.div>
 
