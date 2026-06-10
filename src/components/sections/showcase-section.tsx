@@ -9,6 +9,9 @@ const showcaseItems = [
   { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/1fd744ad-da24-4b12-8276-a7ba24c30414.jpg", label: "Кружки" },
   { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/78da6467-ebbb-4cd1-b910-7d512a396ffe.jpg", label: "Мультфильм" },
   { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/9f529115-fbc0-4c8e-8fca-5bcf60c721e1.jpg", label: "Сумки" },
+  { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/4850cb65-21b0-4a34-9a91-ad0042b16c47.jpg", label: "Атака титанов" },
+  { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/88a50f6e-c83f-4d68-a4ab-ac880ae53c7b.jpg", label: "Тетрадь смерти" },
+  { src: "https://cdn.poehali.dev/projects/ac6c0594-ed34-4b20-98ea-547776407110/files/45840aac-1d33-40e9-a29a-88fd0a5af500.jpg", label: "Эстетика" },
 ]
 
 const yOffsets: [number, number][] = [
@@ -19,6 +22,9 @@ const yOffsets: [number, number][] = [
   [90, -90],
   [140, -140],
   [70, -70],
+  [110, -110],
+  [130, -130],
+  [85, -85],
 ]
 
 export function ShowcaseSection() {
@@ -35,8 +41,11 @@ export function ShowcaseSection() {
   const y4 = useTransform(scrollYProgress, [0, 1], yOffsets[4])
   const y5 = useTransform(scrollYProgress, [0, 1], yOffsets[5])
   const y6 = useTransform(scrollYProgress, [0, 1], yOffsets[6])
+  const y7 = useTransform(scrollYProgress, [0, 1], yOffsets[7])
+  const y8 = useTransform(scrollYProgress, [0, 1], yOffsets[8])
+  const y9 = useTransform(scrollYProgress, [0, 1], yOffsets[9])
 
-  const yValues = [y0, y1, y2, y3, y4, y5, y6]
+  const yValues = [y0, y1, y2, y3, y4, y5, y6, y7, y8, y9]
 
   return (
     <section ref={containerRef} className="bg-background px-6 py-32 overflow-hidden">
