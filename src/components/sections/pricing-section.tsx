@@ -80,7 +80,7 @@ export function PricingSection() {
               </ul>
 
               <a
-                href="https://t.me/Max"
+                href="https://t.me/looolllkaaa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-full mt-8 py-3 px-6 rounded-lg font-medium transition-colors flex items-center justify-center gap-2 ${

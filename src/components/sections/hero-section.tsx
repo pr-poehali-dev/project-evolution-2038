@@ -82,7 +82,7 @@ export function HeroSection() {
           Принты, которые <em className="italic">говорят.</em>
         </h1>
         <motion.a
-          href="https://t.me/Max"
+          href="https://t.me/looolllkaaa"
           target="_blank"
           rel="noopener noreferrer"
           className="pointer-events-auto bg-foreground text-background px-8 py-4 rounded-full text-sm font-medium hover:bg-foreground/90 transition-colors"
