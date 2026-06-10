@@ -78,7 +78,7 @@ export function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
       >
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-white drop-shadow-[0_2px_16px_rgba(0,0,0,0.7)]">
           Принты, которые <em className="italic">говорят.</em>
         </h1>
         <motion.a
